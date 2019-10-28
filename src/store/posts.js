@@ -10,7 +10,7 @@ const postsModule = {
     }
   },
   getters: {
-    getPosts(state) {
+    posts(state) {
       return state.posts;
     }
   },

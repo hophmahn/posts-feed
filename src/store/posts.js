@@ -10,6 +10,9 @@ const postsModule = {
   getters: {
     posts(state) {
       return state.posts;
+    },
+    getPostById: state => id => {
+      return state.posts.find(post => post.id === id);
     }
   },
   actions: {

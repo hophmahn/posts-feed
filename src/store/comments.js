@@ -18,7 +18,6 @@ const commentsModule = {
   actions: {
     async fetchComments({ commit }) {
       const comments = await getComments();
-      console.log(comments);
       commit("setComments", comments);
     }
   }

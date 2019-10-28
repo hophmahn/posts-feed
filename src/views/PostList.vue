@@ -3,7 +3,7 @@
     <h1>Post List</h1>
     <div class="list">
       <div class="list-item" v-for="post in posts" :key="post.id">
-        <PostCard :post="post" />
+        <PostListItemCard :post="post" />
       </div>
     </div>
   </div>
@@ -11,11 +11,11 @@
 
 <script>
 import { mapGetters, mapActions } from "vuex";
-import PostCard from "@/components/PostCard";
+import PostListItemCard from "@/components/PostListItemCard";
 
 export default {
   name: "post-list",
-  components: { PostCard },
+  components: { PostListItemCard },
   data() {
     return {
       posts: []

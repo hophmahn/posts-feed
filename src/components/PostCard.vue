@@ -27,7 +27,7 @@ export default {
     post: {
       title: String,
       body: String,
-      user: String
+      user: Object
     }
   },
   methods: {

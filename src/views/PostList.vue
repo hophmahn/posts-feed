@@ -57,7 +57,19 @@ export default {
 }
 .list {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   grid-gap: 20px;
+}
+
+@media screen and (min-width: 620px) {
+  .list {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .list {
+    grid-template-columns: auto auto auto;
+  }
 }
 </style>

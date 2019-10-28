@@ -1,12 +1,10 @@
 import { getPosts } from "@/services/PostService";
 
 const postsModule = {
-  state: { posts: new Map() },
+  state: { posts: [] },
   mutations: {
     setPosts(state, payload) {
-      payload.forEach((post, index) => {
-        state.posts.set(index, post);
-      });
+      state.posts = [...payload];
     }
   },
   getters: {

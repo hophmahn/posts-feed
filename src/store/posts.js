@@ -1,4 +1,4 @@
-import { getPosts } from "../services/PostService";
+import { getPosts } from "@/services/PostService";
 
 const postsModule = {
   state: { posts: new Map() },

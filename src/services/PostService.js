@@ -1,5 +1,5 @@
 import { get } from "./RequestService";
-import { API_URL } from "../configs/constants";
+import { API_URL } from "@/configs/constants";
 
 export const getPosts = async () => {
   try {
